@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>test</title>
+		<link href="./normalize.css" rel="stylesheet" >
+		<link href="./bootstrap-common.min.css" rel="stylesheet" >
+		<link href="./ajinit.css" rel="stylesheet" >
+		<link href="./checkbox_radio.css" rel="stylesheet" >
+		<link href="./select.css" rel="stylesheet" >
+		<link href="./custom-range.css" rel="stylesheet" >
+		<style>
+
+
+			body{
+				
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="cntr-row cntr-p">
+			<h3>CSS Mode</h3>
+			<div class="col-5">
+				<div class="option-cell">
+					<div class="rounded-one" >
+						<input type="radio" name="radio" id="radio0"/>
+						<label  class="label-des" for="radio0"></label>
+					</div>
+					<label class="option-title" for="radio0">&nbsp;radio caption 0</label>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="option-cell">
+					<div class="rounded-one" >
+						<input type="radio" name="radio" id="radio1"/>
+						<label  class="label-des" for="radio1"></label>
+					</div>
+					<label class="option-title" for="radio1">&nbsp;radio caption 1</label>
+				</div>
+			</div>
+		</div>
+		<div class="cntr-row cntr-p">
+			<div class="col-5">
+				<div class="option-cell">
+					<div class="squared-one" >
+						<input type="checkbox" name="checkbox0" id="checkbox0" />
+						<label  class="label-des" for="checkbox0"></label>
+					</div>
+					<label class="option-title" for="checkbox0">&nbsp;checkbox caption 0</label>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="option-cell">
+					<div class="squared-one" >
+						<input type="checkbox" name="checkbox1" id="checkbox1" />
+						<label  class="label-des" for="checkbox1"></label>
+					</div>
+					<label class="option-title" for="checkbox1">&nbsp;checkbox caption 1</label>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cntr-row cntr-p">
+			<h3>JS Mode</h3>
+			<div class="col-5">
+				<div class="option-cell radios0" >
+					<div class="rounded-one" >
+						<label  class="label-des" ></label>
+					</div>
+					<label class="option-title" >&nbsp;radio caption 0</label>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="option-cell radios0" >
+					<div class="rounded-one" >
+						<label  class="label-des" ></label>
+					</div>
+					<label class="option-title">&nbsp;radio caption 1</label>
+				</div>
+			</div>
+		</div>
+		<div class="cntr-row cntr-p">
+			<div class="col-5">
+				<div class="option-cell checkboxs0">
+					<div class="squared-one" >
+						<label  class="label-des" ></label>
+					</div>
+					<label class="option-title">&nbsp;checkbox caption 0</label>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="option-cell checkboxs0">
+					<div class="squared-one" >
+						<label  class="label-des" ></label>
+					</div>
+					<label class="option-title" >&nbsp;checkbox caption 1</label>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cntr-p">
+			<div class="select-one">
+				<select ng-model="school_selected" id="schoolSelect">
+					<option value="1">option 0</option>
+					<option value="2">option 1</option>
+					<option value="3">option 2</option>
+				</select>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			var jq_radios0 = $('.radios0');
+			jq_radios0.on('click', function(e){
+				var _this = $(this);
+				jq_radios0.each(function(e){
+					$(this).children().eq(0).removeClass('active');
+				});
+				_this.children().eq(0).addClass('active');
+			})
+			var jq_checkboxs0 = $('.checkboxs0');
+			jq_checkboxs0.on('click', function(e){
+				var _this = $(this);
+				if(_this.children().eq(0).hasClass('active')){
+					_this.children().eq(0).removeClass('active');
+					return;
+				}
+				_this.children().eq(0).addClass('active');
+			})
+		</script>
+	</body>
+</html>
