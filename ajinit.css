@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*********       aj init  version 1.1.0      **********/
 /*********       create at  7-20-2015      **********/
-/*********       modify at  8-4-2016      **********/
+/*********       modify at  8-26-2016      **********/
 /* prevent holdtap to select words */
 
 html {
@@ -24,6 +24,9 @@ Opera 9             2147483647  2147483647
 *****/
 .top-layer{
 	z-index:2147483647;
+}
+.bottom-layer{
+	z-index:-1;
 }
 /* end */
 body {
@@ -55,11 +58,20 @@ ul li {
 	padding: 0;
 }
 
+.cntr-relative{
+	position:relative;
+}
 .cntr-block{
 	display:block;
 }
 .cntr-block-force{
 	display:block !important;
+}
+.cntr-inline-block{
+	display:inline-block;
+}
+.cntr-inline-block-force{
+	display:inline-block !important;
 }
 .cntr-m{
 	margin-top:8px;
@@ -165,28 +177,28 @@ ul li {
 }
 
 .font-size-rxxsmall {
-	font-size: 0.4rem;
-}
-.font-size-rxsmall {
-	font-size: 0.6rem;
-}
-.font-size-rsmall {
 	font-size: 0.8rem;
 }
-.font-size-rmedium {
+.font-size-rxsmall {
 	font-size: 1rem;
 }
-.font-size-rlarge {
+.font-size-rsmall {
 	font-size: 1.2rem;
 }
-.font-size-rlarger {
+.font-size-rmedium {
 	font-size: 1.4rem;
 }
-.font-size-rxlarge {
+.font-size-rlarge {
 	font-size: 1.6rem;
 }
-.font-size-rxxlarge {
+.font-size-rlarger {
 	font-size: 1.8rem;
+}
+.font-size-rxlarge {
+	font-size: 2rem;
+}
+.font-size-rxxlarge {
+	font-size: 2.2rem;
 }
 
 .font-size-xxsmall {
@@ -303,8 +315,11 @@ input {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
-.list-item{
-	padding:8px;
+.full-width{
+	width:100%;
+}
+.full-height{
+	height:100%;
 }
 
 .one-clamp{
@@ -399,6 +414,9 @@ input:-webkit-autofill {
 .cntr-flex{
 	display:flex;
 }
+.cntr-inline-flex{
+	display:inline-flex;
+}
 .flex-row-reverse{
 	flex-direction:row-reverse;
 }
@@ -413,6 +431,9 @@ input:-webkit-autofill {
 }
 .flex-wrap-reverse{
 	flex-wrap:wrap-reverse;
+}
+.flex-nowrap{
+	flex-wrap:nowrap;
 }
 
 .alignc-start{
@@ -485,8 +506,15 @@ input:-webkit-autofill {
 .self-stretch{
 	align-self:stretch;
 }
+.none-flex{
+	flex:none;
+}
 
 /* flex section end */
+
+/* column institution */
+
+/* column institution end */
 
 .text-white{
 	color:#fff;
@@ -501,6 +529,8 @@ input:-webkit-autofill {
 	color:#333 !important;
 }
 
+/* text and bg */
+
 .bg-white{
 	background-color:#fff;
 }
@@ -512,4 +542,37 @@ input:-webkit-autofill {
 }
 .bg-black-force{
 	background-color:#333 !important;
+}
+
+/* some base animation */
+.spinning{
+	animation:round360 1s infinite linear;
+}
+@keyframes round360{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+/* some base transition animation */
+.transit-all{
+	transition:all 300ms;
+}
+
+/* some utility */
+.cut-off-line{
+	margin:8px 0;
+	height:1px;
+	background:#e5e5e5;
+}
+
+.cntr-shadow{
+	box-shadow: 0 4px 10px -1px #999;
+}
+
+.cursor-pointer{
+	cursor:pointer;
 }
