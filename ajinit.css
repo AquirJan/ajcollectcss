@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/*********       aj init  version 1.1.0      **********/
+/*********       aj init  version 1.1.1      **********/
 /*********       create at  7-20-2015      **********/
-/*********       modify at  8-26-2016      **********/
+/*********       modify at  9-19-2016      **********/
 /* prevent holdtap to select words */
 
 html {
@@ -247,6 +247,13 @@ ul li {
 	float: none;
 }
 /* ios wp touch smooth*/
+.over-auto{
+	overflow:auto;
+}
+.over-hidden{
+	overflow:hidden;
+}
+
 .scroll-x,
 .scroll-y {
 	-webkit-overflow-scrolling: touch;
