@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/*********       aj init  version 1.1.1      **********/
+/*********       aj init  version 1.1.2      **********/
 /*********       create at  7-20-2015      **********/
-/*********       modify at  9-19-2016      **********/
+/*********       modify at  3-23-2017      **********/
 /* prevent holdtap to select words */
 
 html {
@@ -45,9 +45,6 @@ a:active{
 	text-decoration:none;
 }
 
-
-
-
 ul {
 	margin: 0;
 	padding: 0;
@@ -79,16 +76,16 @@ ul li {
 	margin-bottom:8px;
 	margin-left:8px;
 }
-.cntr-lm{
+.cntr-ml{
 	margin-left:8px;
 }
-.cntr-tm{
+.cntr-mt{
 	margin-top:8px;
 }
-.cntr-rm{
+.cntr-mr{
 	margin-right:8px;
 }
-.cntr-bm{
+.cntr-mb{
 	margin-bottom:8px;
 }
 
@@ -98,16 +95,16 @@ ul li {
 	padding-bottom:8px;
 	padding-left:8px;
 }
-.cntr-lp{
+.cntr-pl{
 	padding-left:8px;
 }
-.cntr-tp{
+.cntr-pt{
 	padding-top:8px;
 }
-.cntr-rp{
+.cntr-pr{
 	padding-right:8px;
 }
-.cntr-bp{
+.cntr-pb{
 	padding-bottom:8px;
 }
 
@@ -171,58 +168,57 @@ ul li {
 .col-9{
 	width:90%;
 }
-
 .col-10{
 	width:100%;
 }
 
-.font-size-rxxsmall {
-	font-size: 0.8rem;
+.font-size-rxxsm {
+	font-size: .4rem;
 }
-.font-size-rxsmall {
+.font-size-rxsm {
+	font-size: .6rem;
+}
+.font-size-rsm {
+	font-size: .8rem;
+}
+.font-size-rm {
 	font-size: 1rem;
 }
-.font-size-rsmall {
+.font-size-rlg {
 	font-size: 1.2rem;
 }
-.font-size-rmedium {
+.font-size-rxlg {
 	font-size: 1.4rem;
 }
-.font-size-rlarge {
+.font-size-rxxlg {
 	font-size: 1.6rem;
 }
-.font-size-rlarger {
+.font-size-rxxxlg {
 	font-size: 1.8rem;
 }
-.font-size-rxlarge {
-	font-size: 2rem;
-}
-.font-size-rxxlarge {
-	font-size: 2.2rem;
-}
 
-.font-size-xxsmall {
+.font-size-xxsm {
 	font-size: 0.4em;
 }
-.font-size-xsmall {
+.font-size-xsm {
 	font-size: 0.6em;
 }
-.font-size-small {
+.font-size-sm {
 	font-size: 0.8em;
 }
-.font-size-medium {
+.font-size-m {
 	font-size: 1em;
 }
-.font-size-large {
+.font-size-lg {
 	font-size: 1.2em;
 }
-.font-size-larger {
+.font-size-xlg {
 	font-size: 1.4em;
 }
-.font-size-xlarge {
+.font-size-xxlg {
 	font-size: 1.6em;
 }
-.font-size-xxlarge {
+.font-size-xxxlg {
 	font-size: 1.8em;
 }
 
